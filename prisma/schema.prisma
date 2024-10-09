@@ -35,4 +35,5 @@ enum ProjectStatus {
   archived
   paused
   expired
+  deleted 
 }

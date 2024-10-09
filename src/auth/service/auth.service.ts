@@ -26,6 +26,7 @@ export class AuthService {
     return {
       token: await this.jwtService.signAsync(payload, {
         secret: this.configService.get<string>('JWT_SECRET'), 
+         expiresIn: '7d',
       }),
     };
   }
