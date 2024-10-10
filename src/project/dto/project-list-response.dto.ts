@@ -10,4 +10,10 @@ export type ProjectListItem = {
   updatedAt?: Date;
 };
 
-export type ProjectListResponse = ProjectListItem[];
+export type ProjectListResponse = {
+  data: ProjectListItem[];
+  total: number;
+  size: number;
+  offset: number;
+  limit: number;
+};
